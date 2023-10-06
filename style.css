@@ -1,0 +1,228 @@
+@charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css");
+body {
+  background-image: url("https://undsgn.com/wp-content/uploads/2018/04/ltotbngnzzu.jpg");
+  background-repeat: repeat;
+  min-height: 80vh;
+  /* Stiluri pentru ecrane cu o lățime maximă de 768px */
+  /* Stiluri pentru ecrane cu o lățime între 769px și 1024px */
+}
+body .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .content .tabel-stoc {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 100px;
+  flex-direction: center;
+  padding-top: 30px;
+}
+body .content .tabel-stoc .admin-panel {
+  height: 270px;
+  background-color: rgba(210, 200, 200, 0.6);
+  margin-right: 50px;
+  width: 550px;
+  height: 320px;
+}
+body .content .tabel-stoc .admin-panel .comenzi {
+  display: grid;
+}
+body .content .tabel-stoc .admin-panel .comenzi hr {
+  border: 3px solid black;
+}
+body .content .tabel-stoc .admin-panel .comenzi form button {
+  padding-bottom: 10px;
+  margin-left: 140px;
+  margin-top: -5px;
+}
+body .content .barman-panel button {
+  width: 340px;
+}
+body .content .barman-panel hr {
+  border: 2px solid white;
+}
+body .modal {
+  display: none; /* Ascunde modalul implicit */
+  position: fixed;
+  z-index: 9999; /* Asigură că modalul este afișat deasupra celorlalte elemente */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Fundal semi-transparent */
+  overflow: auto;
+}
+body .modal .modal-content {
+  background-color: rgba(240, 233, 233, 0.8117647059);
+}
+body .modal .modal-content .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+body .modal .modal-content .close :hover, body .modal .modal-content .close :focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+body .modal .modal-content .modal-body form button {
+  margin-top: 10px;
+  align-items: center;
+}
+body .logare {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  border: 1px solid rgb(86, 64, 64);
+  width: 450px;
+  height: 600px;
+  background-color: rgba(240, 248, 255, 0.073);
+  border-radius: 30px;
+  text-align: center;
+}
+body .logare input {
+  margin-top: 15px;
+  color: white;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid #fe4567;
+  transition: transform 0.2s ease-in-out;
+  animation: shake 0.14s 3;
+}
+body .logare input:valid {
+  border-color: #45feaf;
+  animation: none;
+}
+body .logare input:focus {
+  outline: none;
+  transform: scale(1.1);
+}
+body .logare .logo-logare img {
+  width: 300px;
+}
+body .logare .login button {
+  margin-top: 10px;
+  width: 185px;
+}
+body .log {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+body .log .pagination .pagination-list {
+  display: flex;
+}
+body .log .tabel-log {
+  padding-top: 20px;
+  width: 90%;
+}
+body .log .tabel-log .cautare {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+body .log .tabel-log .cautare .inputuri {
+  display: block;
+  width: 500px;
+}
+body .log .tabel-log .cautare .inputuri label {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  color: white;
+}
+body .log .tabel-log .cautare .inputuri button {
+  margin-left: 90px;
+  width: 300px;
+  margin-top: 10px;
+}
+body .log .tabel-log .cautare .inputuri input {
+  margin-top: 10px;
+}
+body .log .tabel-log .search {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  body body {
+    font-size: 14px;
+  }
+  body .notificare {
+    width: 410px;
+  }
+  body .content {
+    display: block;
+  }
+  body .content .tabel-stoc {
+    display: table-row;
+    margin-left: 10px;
+  }
+  body .content .tabel-stoc table {
+    margin-top: 30px;
+  }
+  body .content .tabel-stoc table .info {
+    height: auto;
+  }
+  body .content .tabel-stoc .admin-panel {
+    width: 100%;
+  }
+  body .content .tabel-stoc .barman-panel {
+    margin-left: 20px;
+  }
+  body .log {
+    display: flex;
+    justify-content: center;
+  }
+  body .log .inputuri {
+    display: flex;
+    width: 250px;
+  }
+  body .log .inputuri input {
+    width: 250px;
+    margin-left: 100px;
+  }
+  body .log .inputuri select {
+    width: 250px;
+    margin-left: 100px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
+    /* Modifică aspectul elementelor în acest interval de lățime */
+    /* Exemplu: */
+  }
+  body body {
+    font-size: 14px;
+  }
+  body .notificare {
+    width: auto;
+  }
+  body .tabel-stoc {
+    margin-left: 250px;
+  }
+  body .tabel-stoc .admin-panel {
+    width: 100%;
+  }
+  body .tabel-stoc .barman-panel {
+    margin-left: 20px;
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    translate: 0;
+  }
+  25% {
+    translate: 8px 0;
+  }
+  75% {
+    translate: -8px 0;
+  }
+}/*# sourceMappingURL=style.css.map */
